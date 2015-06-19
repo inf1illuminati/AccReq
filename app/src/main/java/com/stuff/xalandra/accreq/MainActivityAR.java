@@ -32,8 +32,11 @@ public class MainActivityAR extends Activity implements SensorEventListener {
     //Manage sensors
     SensorManager sm;
 
+    //tekst labels
     TextView displayReading;
     TextView arrayStuff;
+
+    //knoppen
     Button stuurButton;
     Button nuButton;
     Button startloop;
@@ -44,8 +47,11 @@ public class MainActivityAR extends Activity implements SensorEventListener {
     float a;
     float b;
     float c;
-    float dataKopie[] = new float[3];
     float buttonclick;
+
+    //array
+    float dataKopie[] = new float[3];
+
 
     //timer!!///////////////////////////////////////////////////////////////////////////////////////
     TextView timerTextView;
@@ -179,7 +185,7 @@ public class MainActivityAR extends Activity implements SensorEventListener {
                 @Override
                 public void onClick(View view) {
                     // aan viewtekst
-                    arrayStuff.setText(String.valueOf(dataKopie[1]));
+                    arrayStuff.setText(String.valueOf(dataKopie[0]));
                 }
             });
 
@@ -195,7 +201,6 @@ public class MainActivityAR extends Activity implements SensorEventListener {
                                               int i = 0;
                                               while (i < 10) {
                                                  GetServerData.performClick();
-
                                                   i++;
                                               }
 
@@ -221,6 +226,8 @@ public class MainActivityAR extends Activity implements SensorEventListener {
             displayReading = (TextView) findViewById(R.id.display_reading);
 
         //timer!!///////////////////////////////////////////////////////////////////////////////////
+        //het idee was door middel van de timer gegevens van de sensoren voor een bepaalde tijd door
+        // te sturen. Hier zijn we niet verder meegegaan door tijd tekort
             timerTextView = (TextView) findViewById(R.id.timerTextView);
 
             Button b = (Button) findViewById(R.id.button);
@@ -286,7 +293,5 @@ public class MainActivityAR extends Activity implements SensorEventListener {
             displayReading.setText("X waarde " + a + "\nY waarde " + b + "\nZ waarde " + c);
             //displayReading.setText("X waarde "+event.values[0]+ "\nY waarde "+event.values[1]+ "\nZ waarde "+event.values[2]);
         }
-
-
 
 }
