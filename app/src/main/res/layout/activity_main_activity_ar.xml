@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/widget38"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/display_reading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="X waarde:  Y waarde: Z(waartekracht):"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Accelerometer"
+        android:layout_below="@+id/GetServerData"
+        android:layout_alignParentLeft="true" />
+    <Button
+        android:id="@+id/GetServerData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="57dp"
+        android:text="Request"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@+id/textView" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:layout_below="@+id/timerTextView"
+        android:layout_alignParentLeft="true" />
+    <Button
+        android:id="@+id/startloop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Loop"
+        android:layout_alignTop="@+id/stuurButton"
+        android:layout_alignLeft="@+id/stoploop" />
+    <Button
+        android:id="@+id/stoploop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Loop"
+        android:layout_alignTop="@+id/timerTextView"
+        android:layout_toRightOf="@+id/GetServerData" />
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="New Text"
+        android:layout_below="@+id/nuButton"
+        android:layout_alignParentLeft="true" />
+    <Button
+        android:id="@+id/nuButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Nu"
+        android:layout_below="@+id/arrayStuff"
+        android:layout_alignParentLeft="true" />
+    <TextView
+        android:id="@+id/arrayStuff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="leeg"
+        android:layout_below="@+id/stuurButton"
+        android:layout_alignParentLeft="true" />
+    <Button
+        android:id="@+id/stuurButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stuur data"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true" />
+</RelativeLayout>
