@@ -3,25 +3,25 @@
     android:id="@+id/widget38"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <Button
         android:id="@+id/GetServerData"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
         android:text="Request"
         android:layout_below="@+id/textView"
-        android:layout_alignStart="@+id/stuurButton" />
+        android:layout_alignEnd="@+id/display_reading" />
 
     <Button
         android:id="@+id/startloop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Start Loop"
-        android:layout_alignTop="@+id/GetServerData"
+        android:layout_above="@+id/textView2"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="21dp" />
+        android:layout_marginRight="20dp" />
 
     <Button
         android:id="@+id/stoploop"
@@ -46,7 +46,8 @@
         android:layout_marginTop="27dp"
         android:text="leeg"
         android:layout_below="@+id/stuurButton"
-        android:layout_alignParentLeft="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp" />
 
     <Button
         android:id="@+id/nuButton"
@@ -63,23 +64,37 @@
         android:layout_marginTop="24dp"
         android:text="X waarde:  Y waarde: Z(waartekracht):"
         android:layout_below="@+id/textView2"
-        android:layout_alignParentLeft="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp" />
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
         android:text="Accelerometer"
+        android:layout_marginLeft="0dp"
         android:layout_below="@+id/GetServerData"
-        android:layout_alignParentLeft="true" />
+        android:layout_alignStart="@+id/textView" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="AccReq"
+        android:layout_marginLeft="10dp"
+        android:autoText="false"
+        android:padding="5dp"
+        android:layout_below="@+id/tool_bar"
+        android:layout_alignEnd="@+id/timerTextView" />
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="false" />
+
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
@@ -95,7 +110,8 @@
         android:layout_height="wrap_content"
         android:text="New Text"
         android:layout_alignBottom="@+id/button"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -104,5 +120,7 @@
         android:id="@+id/textView3"
         android:layout_alignBaseline="@+id/button"
         android:layout_alignBottom="@+id/button"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp" />
+
 </RelativeLayout>
