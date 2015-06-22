@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
 
-        <!-- Add Gyroscope
+        <!-- Go to Gyroscope
         <activity
             android:name=".Gyroscope"
             android:label="gyroscope" >

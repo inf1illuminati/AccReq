@@ -6,6 +6,7 @@
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!-- knop, waarden naar index.php sturen -->
     <Button
         android:id="@+id/GetServerData"
         android:layout_width="wrap_content"
@@ -14,6 +15,7 @@
         android:layout_below="@+id/textView"
         android:layout_alignEnd="@+id/display_reading" />
 
+    <!-- knop, begin loop -->
     <Button
         android:id="@+id/startloop"
         android:layout_width="wrap_content"
@@ -23,6 +25,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginRight="20dp" />
 
+    <!-- knop, stop loop -->
     <Button
         android:id="@+id/stoploop"
         android:layout_width="wrap_content"
@@ -31,6 +34,7 @@
         android:layout_below="@+id/startloop"
         android:layout_alignEnd="@+id/startloop" />
 
+    <!-- knop, zou naar nieuwe pagina met gyroscope moeten gaan -->
     <Button
         android:id="@+id/stuurButton"
         android:layout_width="wrap_content"
@@ -39,6 +43,7 @@
         android:layout_centerVertical="true"
         android:layout_alignEnd="@+id/startloop" />
 
+    <!-- label waar waarde X in komt -->
     <TextView
         android:id="@+id/arrayStuff"
         android:layout_width="wrap_content"
@@ -49,6 +54,7 @@
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="20dp" />
 
+    <!-- knop, zet waarde x in label hier boven -->
     <Button
         android:id="@+id/nuButton"
         android:layout_width="wrap_content"
@@ -57,6 +63,7 @@
         android:layout_alignTop="@+id/arrayStuff"
         android:layout_alignEnd="@+id/stuurButton" />
 
+    <!-- label waar de waardes van de accelerometer in komen -->
     <TextView
         android:id="@+id/display_reading"
         android:layout_width="wrap_content"
@@ -66,6 +73,8 @@
         android:layout_below="@+id/textView2"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="20dp" />
+
+    <!-- label accelerometer -->
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -75,6 +84,7 @@
         android:layout_below="@+id/GetServerData"
         android:layout_alignStart="@+id/textView" />
 
+    <!-- label pagina -->
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -86,6 +96,7 @@
         android:layout_below="@+id/tool_bar"
         android:layout_alignEnd="@+id/timerTextView" />
 
+    <!-- toolbar -->
     <include
         android:id="@+id/tool_bar"
         layout="@layout/tool_bar"
@@ -95,6 +106,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="false" />
 
+    <!-- knop timer -->
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
@@ -104,6 +116,7 @@
         android:layout_alignEnd="@+id/nuButton"
         android:layout_marginTop="31dp" />
 
+    <!-- label timer, hier komt de teller in -->
     <TextView
         android:id="@+id/timerTextView"
         android:layout_width="wrap_content"
@@ -113,6 +126,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginLeft="20dp" />
 
+    <!-- label timer -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

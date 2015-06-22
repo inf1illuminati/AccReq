@@ -42,7 +42,6 @@ public class MainActivityAR extends Activity implements SensorEventListener {
     Button startloop;
     Button stoploop;
 
-
     //variabelen
     float a;
     float b;
@@ -89,7 +88,9 @@ public class MainActivityAR extends Activity implements SensorEventListener {
         setContentView(R.layout.activity_main_activity_ar);
 
         //HTTPrequest!!/////////////////////////////////////////////////////////////////////////////
-            //knop weg, dus oncreate naar database spammen
+            //een idee: knop weg, dus oncreate naar database spammen
+            //nu knop voor de loop ipv het idee hier boven
+
             //knop
             final Button GetServerData = (Button) findViewById(R.id.GetServerData);
 
@@ -226,6 +227,7 @@ public class MainActivityAR extends Activity implements SensorEventListener {
             displayReading = (TextView) findViewById(R.id.display_reading);
 
         //timer!!///////////////////////////////////////////////////////////////////////////////////
+
         //het idee was door middel van de timer gegevens van de sensoren voor een bepaalde tijd door
         // te sturen. Hier zijn we niet verder meegegaan door tijd tekort
             timerTextView = (TextView) findViewById(R.id.timerTextView);
